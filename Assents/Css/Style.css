@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #2F2E33;
+}
+
+button {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow:0 3px 1px olive;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    font-size: 19px;
+}
+
+.title {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#task-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    color: white;
+}
+
+.task.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: gray;
+}
